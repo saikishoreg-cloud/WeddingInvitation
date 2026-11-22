@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Sai Kishore &amp; Santhoshi Gayithri | Wedding Invitation</title>
+
+  <!-- Open Graph Meta Tags for WhatsApp & Social Link Previews -->
+  <meta property="og:title" content="Sai Kishore &amp; Santhoshi Gayithri — Wedding Invitation" />
+  <meta property="og:description" content="Together with our families, we warmly invite you to celebrate our wedding on December 15, 2026 at Sri Annapurna Function Hall, Samalkot." />
+  <meta property="og:type" content="website" />
+  <!-- Tip: Upload a 1200x630 cover photo named preview.jpg to your GitHub repo and replace the URL below -->
+  <meta property="og:image" content="https://placehold.co/1200x630/F5F1E8/4F614B?text=S+%26+K%0ASai+Kishore+%26+Santhoshi+Gayithria%0ADecember+15,+2026" />
+  <meta name="theme-color" content="#F5F1E8" />
+
+  <!-- Google Fonts: Editorial Serif & Airy Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen: '#F5F1E8',
+            linenLight: '#FAF8F3',
+            sage: '#6F826A',
+            sageDeep: '#4F614B',
+            sageMist: '#E6ECE2',
+            clay: '#C48B76',
+            claySoft: '#EFE2DC',
+            ink: '#2B332C',
+            inkMuted: '#5D685E',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* =====================================================================
+       BASE ORGANIC LINEN & PAPER GRAIN THEME
+       ===================================================================== */
+    :root {
+      --linen: #F5F1E8;
+      --linen-light: #FAF8F3;
+      --sage: #6F826A;
+      --sage-deep: #4F614B;
+      --sage-mist: #E6ECE2;
+      --clay: #C48B76;
+      --ink: #2B332C;
+      --ink-muted: #5D685E;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      background-color: var(--linen);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: var(--linen);
+      color: var(--ink);
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body.curtains-locked {
+      overflow: hidden;
+      height: 100dvh;
+    }
+
+    /* Subtle Organic Cotton-Paper Grain Overlay */
+    .paper-grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 5;
+      opacity: 0.38;
+      background-image:
+        radial-gradient(rgba(79, 97, 75, 0.045) 1px, transparent 0),
+        radial-gradient(rgba(196, 139, 118, 0.035) 1px, transparent 0);
+      background-size: 26px 26px, 38px 38px;
+      background-position: 0 0, 13px 19px;
+    }
+
+    /* Soft Natural Elevation Card */
+    .botanical-card {
+      background: rgba(250, 248, 243, 0.86);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(111, 130, 106, 0.22);
+      box-shadow: 0 12px 36px rgba(43, 51, 44, 0.05);
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+    }
+
+    .botanical-card:hover {
+      border-color: rgba(111, 130, 106, 0.42);
+      box-shadow: 0 16px 42px rgba(43, 51, 44, 0.08);
+    }
+
+    /* Primary Natural Sage Button */
+    .btn-sage {
+      background-color: var(--sage-deep);
+      color: var(--linen-light);
+      box-shadow: 0 8px 24px rgba(79, 97, 75, 0.22);
+      transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-sage:hover {
+      background-color: #3F503C;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(79, 97, 75, 0.28);
+    }
+
+    .btn-sage:active {
+      transform: translateY(0);
+    }
+
+    /* Secondary Minimal Outline Button */
+    .btn-outline-sage {
+      border: 1px solid rgba(79, 97, 75, 0.42);
+      background-color: rgba(250, 248, 243, 0.72);
+      color: var(--sage-deep);
+      transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .btn-outline-sage:hover {
+      background-color: var(--sage-mist);
+      border-color: var(--sage-deep);
+      transform: translateY(-2px);
+    }
+
+    /* =====================================================================
+       1. FLOWING PLEATED SAGE & LINEN CURTAINS OVERLAY (100dvh)
+       ===================================================================== */
+    #curtain-overlay {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100dvh;
+      z-index: 100;
+      overflow: hidden;
+      transition: opacity 0.85s ease 1.15s, visibility 0.85s ease 1.15s;
+    }
+
+    #curtain-overlay.opened {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    /* Soft Warm Daylight Glow Behind Curtains */
+    .curtain-daylight {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(250, 248, 243, 0.95) 0%, rgba(230, 236, 226, 0.5) 55%, rgba(245, 241, 232, 0) 85%);
+      opacity: 0;
+      transition: opacity 1s ease;
+      pointer-events: none;
+    }
+
+    #curtain-overlay.opening .curtain-daylight {
+      opacity: 1;
+    }
+
+    /* Realistic Pleated Linen-Sage Fabric Panels */
+    .curtain-panel {
+      position: absolute;
+      top: -2%;
+      width: 52%;
+      height: 104%;
+      /* Multi-layered soft pleated fabric folds */
+      background-image:
+        linear-gradient(180deg, rgba(43, 51, 44, 0.14) 0%, rgba(43, 51, 44, 0.0) 14%, rgba(43, 51, 44, 0.04) 88%, rgba(43, 51, 44, 0.16) 100%),
+        repeating-linear-gradient(
+          90deg,
+          #7A8D75 0px,
+          #8EA188 18px,
+          #A4B49D 34px,
+          #7F927A 52px,
+          #6B7E66 72px,
+          #84977E 92px
+        );
+      box-shadow: inset 0 0 55px rgba(43, 51, 44, 0.18);
+      will-change: transform;
+      transition: transform 1.75s cubic-bezier(0.65, 0.02, 0.25, 1), filter 1.4s ease;
+    }
+
+    /* Subtle Linen Weave Overlay on Curtains */
+    .curtain-panel::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(245, 241, 232, 0.08) 0px, transparent 2px, transparent 5px),
+        linear-gradient(90deg, rgba(245, 241, 232, 0.12) 0%, transparent 18%, transparent 82%, rgba(43, 51, 44, 0.14) 100%);
+      pointer-events: none;
+    }
+
+    .curtain-left {
+      left: -1%;
+      transform-origin: top left;
+      border-right: 1px solid rgba(245, 241, 232, 0.35);
+      box-shadow: 12px 0 36px rgba(43, 51, 44, 0.18), inset -18px 0 28px rgba(43, 51, 44, 0.12);
+      animation: gentleSwayLeft 7s ease-in-out infinite;
+    }
+
+    .curtain-right {
+      right: -1%;
+      transform-origin: top right;
+      border-left: 1px solid rgba(245, 241, 232, 0.35);
+      box-shadow: -12px 0 36px rgba(43, 51, 44, 0.18), inset 18px 0 28px rgba(43, 51, 44, 0.12);
+      animation: gentleSwayRight 7s ease-in-out infinite;
+    }
+
+    /* Gentle Breathing Sway Before Opening */
+    @keyframes gentleSwayLeft {
+      0%, 100% { transform: skewX(0deg) translateX(0); }
+      50% { transform: skewX(0.45deg) translateX(-3px); }
+    }
+
+    @keyframes gentleSwayRight {
+      0%, 100% { transform: skewX(0deg) translateX(0); }
+      50% { transform: skewX(-0.45deg) translateX(3px); }
+    }
+
+    /* Parting & Gathering Motion When Opened */
+    #curtain-overlay.opening .curtain-left {
+      animation: none;
+      transform: translateX(-102%) scaleX(0.68) skewX(-3.5deg);
+    }
+
+    #curtain-overlay.opening .curtain-right {
+      animation: none;
+      transform: translateX(102%) scaleX(0.68) skewX(3.5deg);
+    }
+
+    /* Minimalist Botanical Monogram Badge Over Curtain Seam */
+    #curtain-badge-container {
+      position: absolute;
+      inset: 0;
+      z-index: 110;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    #curtain-overlay.opening #curtain-badge-container {
+      opacity: 0;
+      transform: scale(0.92) translateY(-10px);
+      pointer-events: none;
+    }
+
+    .monogram-wreath-badge {
+      background: rgba(250, 248, 243, 0.94);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(111, 130, 106, 0.28);
+      box-shadow:
+        0 20px 50px rgba(43, 51, 44, 0.22),
+        0 0 0 8px rgba(250, 248, 243, 0.28);
+    }
+
+    /* =====================================================================
+       2. ORGANIC MATTE SAGE & PEARL SCRATCH CARD
+       ===================================================================== */
+    .scratch-frame {
+      position: relative;
+      width: 100%;
+      max-width: 380px;
+      aspect-ratio: 16 / 10;
+      min-height: 224px;
+      margin: 0 auto;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(111, 130, 106, 0.35);
+      box-shadow:
+        0 16px 40px rgba(43, 51, 44, 0.08),
+        0 0 0 6px rgba(250, 248, 243, 0.9),
+        0 0 0 7px rgba(111, 130, 106, 0.18);
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .scratch-underlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top center, #FAF8F3 0%, #EFECE3 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.25rem;
+    }
+
+    #scratch-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: grab;
+      touch-action: none; /* Prevents vertical scroll while scratching */
+      transition: opacity 0.85s ease;
+    }
+
+    #scratch-canvas:active {
+      cursor: grabbing;
+    }
+
+    #scratch-canvas.revealed {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Soft Pulsing Hint Pill on Scratch Card */
+    .scratch-hint-badge {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      transition: opacity 0.45s ease;
+      animation: softPulse 2.6s ease-in-out infinite;
+    }
+
+    .scratch-hint-badge.hidden-hint {
+      opacity: 0;
+    }
+
+    @keyframes softPulse {
+      0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.88; }
+      50% { transform: translateX(-50%) scale(1.04); opacity: 1; }
+    }
+
+    /* =====================================================================
+       3. SCROLL REVEAL, FLOATING AUDIO TOGGLE & TOAST
+       ===================================================================== */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #ambient-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    #petal-burst-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 120;
+    }
+
+    /* Minimal Floating Sound Toggle */
+    #music-toggle {
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      z-index: 60;
+      width: 48px;
+      height: 48px;
+      border-radius: 9999px;
+      background: rgba(250, 248, 243, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(111, 130, 106, 0.35);
+      color: var(--sage-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(43, 51, 44, 0.12);
+      cursor: pointer;
+      transition: transform 0.25s ease, background-color 0.25s ease;
+    }
+
+    #music-toggle:hover {
+      transform: scale(1.06);
+      background: #FFFFFF;
+    }
+
+    .sound-bars {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      height: 15px;
+    }
+
+    .sound-bar {
+      width: 2.5px;
+      border-radius: 2px;
+      background-color: var(--sage-deep);
+      animation: gentleWave 1.3s ease-in-out infinite;
+    }
+
+    .sound-bar:nth-child(2) { animation-delay: 0.22s; }
+    .sound-bar:nth-child(3) { animation-delay: 0.44s; }
+    .sound-bar:nth-child(4) { animation-delay: 0.12s; }
+
+    .music-paused .sound-bar {
+      animation: none;
+      height: 3px !important;
+      opacity: 0.45;
+    }
+
+    @keyframes gentleWave {
+      0%, 100% { height: 4px; }
+      50% { height: 15px; }
+    }
+
+    /* Minimal Toast Notification */
+    #toast-pill {
+      position: fixed;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(16px);
+      z-index: 150;
+      background: var(--ink);
+      color: var(--linen-light);
+      padding: 0.65rem 1.25rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      box-shadow: 0 10px 28px rgba(43, 51, 44, 0.2);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      white-space: nowrap;
+    }
+
+    #toast-pill.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+
+<body class="curtains-locked selection:bg-sageMist selection:text-ink">
+
+  <!-- =========================================================================
+       OPTIONAL CUSTOM MUSIC FILE FOR GITHUB PAGES
+       Want to use your own aesthetic acoustic or instrumental song?
+       1. Upload your audio file (e.g., music.mp3) to the same GitHub folder as index.html.
+       2. Uncomment the <audio> block below.
+       3. The page will automatically fade in your music.mp3 instead of the built-in synth.
+       ========================================================================= -->
+  <!--
+  <audio id="custom-music" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  -->
+
+  <!-- Subtle Cotton Paper Texture -->
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <!-- Gentle Floating Light Motes & Botanical Leaves Canvas -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Soft Petal Celebration Canvas for Scratch Reveal -->
+  <canvas id="petal-burst-canvas" aria-hidden="true"></canvas>
+
+  <!-- Minimal Toast Pill -->
+  <div id="toast-pill" role="status" aria-live="polite"></div>
+
+  <!-- =========================================================================
+       1. FLOWING PLEATED SAGE & LINEN CURTAINS ENTRANCE (100dvh)
+       ========================================================================= -->
+  <div id="curtain-overlay" aria-label="Wedding Invitation Curtains">
+    <div class="curtain-daylight"></div>
+
+    <!-- Left & Right Pleated Curtains -->
+    <div class="curtain-panel curtain-left"></div>
+    <div class="curtain-panel curtain-right"></div>
+
+    <!-- Centered Minimalist Botanical Monogram Badge -->
+    <div id="curtain-badge-container">
+      <div class="monogram-wreath-badge w-56 h-56 sm:w-64 sm:h-64 rounded-full flex flex-col items-center justify-center relative px-6 text-center mb-7">
+        <!-- Minimalist Olive / Eucalyptus Wreath Line-Art SVG -->
+        <svg class="absolute inset-2 w-[calc(100%-16px)] h-[calc(100%-16px)] text-sage/75 pointer-events-none" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Thin Outer Organic Circle -->
+          <circle cx="100" cy="100" r="86" stroke="currentColor" stroke-width="0.9" stroke-dasharray="2 3" opacity="0.6"/>
+          <!-- Left Botanical Arc -->
+          <path d="M96 184 C46 180 16 142 18 96 C20 52 50 22 92 16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          <!-- Right Botanical Arc -->
+          <path d="M104 184 C154 180 184 142 182 96 C180 52 150 22 108 16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          <!-- Delicate Left Leaves -->
+          <path d="M22 118 C10 112 10 100 21 98 C25 104 26 112 22 118 Z" fill="currentColor" opacity="0.28"/>
+          <path d="M25 84 C14 75 18 63 29 66 C31 73 30 79 25 84 Z" fill="currentColor" opacity="0.28"/>
+          <path d="M44 48 C36 37 44 27 54 34 C53 41 49 46 44 48 Z" fill="currentColor" opacity="0.28"/>
+          <path d="M46 156 C35 154 34 142 45 138 C50 144 50 151 46 156 Z" fill="currentColor" opacity="0.28"/>
+          <!-- Delicate Right Leaves -->
+          <path d="M178 118 C190 112 190 100 179 98 C175 104 174 112 178 118 Z" fill="currentColor" opacity="0.28"/>
+          <path d="M175 84 C186 75 182 63 171 66 C169 73 170 79 175 84 Z" fill="currentColor" opacity="0.28"/>
+          <path d="M156 48 C164 37 156 27 146 34 C147 41 151 46 156 48 Z" fill="currentColor" opacity="0.28"/>
+          <path d="M154 156 C165 154 166 142 155 138 C150 144 150 151 154 156 Z" fill="currentColor" opacity="0.28"/>
+          <!-- Tiny Terracotta Buds at Top & Bottom -->
+          <circle cx="100" cy="15" r="2.8" fill="#C48B76"/>
+          <circle cx="100" cy="185" r="2.5" fill="#C48B76" opacity="0.8"/>
+        </svg>
+
+        <span class="font-sans text-[10px] tracking-[0.28em] uppercase text-inkMuted mb-1">
+          Wedding Invitation
+        </span>
+        <div class="font-serif italic text-5xl sm:text-6xl font-light text-sageDeep tracking-wider leading-none my-1">
+          K <span class="text-clay text-4xl sm:text-5xl not-italic">&amp;</span> S
+        </div>
+        <p class="font-serif text-sm sm:text-base text-ink/80 tracking-wide mt-2">
+          Kishore &amp; Santhoshi
+        </p>
+      </div>
+
+      <!-- Clean Inviting Pill Button -->
+      <button
+        id="open-curtains-btn"
+        type="button"
+        class="btn-sage min-h-[48px] px-8 py-3.5 rounded-full font-sans text-xs sm:text-sm font-medium tracking-[0.2em] uppercase inline-flex items-center gap-2.5 cursor-pointer"
+      >
+        <span>Open Invitation</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg>
+      </button>
+
+      <p class="font-sans text-[11px] tracking-[0.14em] text-linenLight/90 mt-3.5 drop-shadow-sm">
+        best experienced with sound
+      </p>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MINIMALIST FLOATING SOUND TOGGLE
+       ========================================================================= -->
+  <button
+    id="music-toggle"
+    type="button"
+    class="music-paused hidden"
+    aria-label="Toggle ambient music"
+    title="Mute / Play Music"
+  >
+    <div class="sound-bars" aria-hidden="true">
+      <span class="sound-bar"></span>
+      <span class="sound-bar"></span>
+      <span class="sound-bar"></span>
+      <span class="sound-bar"></span>
+    </div>
+  </button>
+
+  <!-- =========================================================================
+       MAIN MOBILE-FIRST INVITATION FLOW
+       ========================================================================= -->
+  <main class="relative z-20 max-w-md sm:max-w-xl mx-auto px-5 sm:px-8 py-12 sm:py-16 space-y-16 sm:space-y-20">
+
+    <!-- =======================================================================
+         HERO SECTION (GROOM FIRST, NATURAL BOTANICAL EDITORIAL STYLE)
+         ======================================================================= -->
+    <section id="hero" class="text-center pt-2 reveal-on-scroll">
+      <!-- Delicate Minimalist Eucalyptus Sprig SVG -->
+      <div class="flex justify-center mb-5">
+        <svg class="w-16 h-16 text-sage" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M40 72 C40 52 38 30 42 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          <!-- Leaves along stem -->
+          <path d="M40 56 C28 54 24 44 33 41 C38 44 40 50 40 56 Z" stroke="currentColor" stroke-width="1.2" fill="rgba(111,130,106,0.14)"/>
+          <path d="M40 48 C52 46 56 36 47 33 C42 36 40 42 40 48 Z" stroke="currentColor" stroke-width="1.2" fill="rgba(111,130,106,0.14)"/>
+          <path d="M40 34 C29 31 27 21 35 19 C39 23 40 28 40 34 Z" stroke="currentColor" stroke-width="1.2" fill="rgba(111,130,106,0.14)"/>
+          <path d="M41 26 C51 23 53 14 46 12 C42 16 41 21 41 26 Z" stroke="currentColor" stroke-width="1.2" fill="rgba(111,130,106,0.14)"/>
+          <circle cx="42" cy="8" r="2.2" fill="#C48B76"/>
+        </svg>
+      </div>
+
+      <p class="font-sans text-[11px] tracking-[0.26em] uppercase text-sageDeep/85 mb-4">
+        || Sri Ganeshaya Namah ||
+      </p>
+
+      <p class="font-serif italic text-lg sm:text-xl text-inkMuted leading-relaxed max-w-xs sm:max-w-sm mx-auto mb-10">
+        Together with our families, we warmly invite you to celebrate the wedding of
+      </p>
+
+      <!-- Editorial Name Card -->
+      <div class="botanical-card rounded-[28px] px-6 py-10 sm:px-10 sm:py-12 relative overflow-hidden">
+        <!-- Subtle Corner Botanical Accents -->
+        <svg class="absolute -top-2 -left-2 w-20 h-20 text-sage/20 pointer-events-none" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path d="M12 88 C18 52 42 24 84 14" stroke="currentColor" stroke-width="1.5"/>
+          <ellipse cx="36" cy="46" rx="10" ry="5" transform="rotate(-42 36 46)" fill="currentColor"/>
+          <ellipse cx="56" cy="30" rx="9" ry="4.5" transform="rotate(-28 56 30)" fill="currentColor"/>
+        </svg>
+        <svg class="absolute -bottom-2 -right-2 w-20 h-20 text-sage/20 rotate-180 pointer-events-none" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path d="M12 88 C18 52 42 24 84 14" stroke="currentColor" stroke-width="1.5"/>
+          <ellipse cx="36" cy="46" rx="10" ry="5" transform="rotate(-42 36 46)" fill="currentColor"/>
+          <ellipse cx="56" cy="30" rx="9" ry="4.5" transform="rotate(-28 56 30)" fill="currentColor"/>
+        </svg>
+
+        <!-- Groom First -->
+        <div>
+          <h1 class="font-serif italic text-5xl sm:text-6xl font-normal text-ink tracking-tight leading-tight">
+            Sai Kishore
+          </h1>
+          <p class="font-sans text-xs sm:text-sm text-inkMuted mt-2.5 leading-relaxed">
+            Son of <span class="text-ink font-medium">Sri Suribabu</span> &amp; <span class="text-ink font-medium">Smt. Anantha Lakshmi</span>
+          </p>
+        </div>
+
+        <!-- Delicate Ampersand Divider -->
+        <div class="flex items-center justify-center gap-4 my-7">
+          <span class="h-[1px] w-12 bg-sage/35"></span>
+          <span class="font-serif italic text-3xl text-clay leading-none">&amp;</span>
+          <span class="h-[1px] w-12 bg-sage/35"></span>
+        </div>
+
+        <!-- Bride Second -->
+        <div>
+          <h2 class="font-serif italic text-5xl sm:text-6xl font-normal text-ink tracking-tight leading-tight">
+            Santhoshi Gayithri
+          </h2>
+          <p class="font-sans text-xs sm:text-sm text-inkMuted mt-2.5 leading-relaxed">
+            Daughter of <span class="text-ink font-medium">Sri Sattibabu</span> &amp; <span class="text-ink font-medium">Smt. Veera Lakshmi</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         INTERACTIVE TOUCH-FRIENDLY SCRATCH CARD
+         ======================================================================= -->
+    <section id="scratch-section" class="text-center reveal-on-scroll">
+      <p class="font-sans text-[11px] tracking-[0.26em] uppercase text-clay font-medium mb-2">
+        Save the Date
+      </p>
+      <h3 class="font-serif text-3xl sm:text-4xl font-normal text-ink mb-2">
+        Unveil Our Wedding Day
+      </h3>
+      <p class="font-sans text-xs sm:text-sm text-inkMuted mb-7">
+        Gently rub the surface below to reveal the date &amp; Muhurtham
+      </p>
+
+      <!-- Scratchable Canvas Frame -->
+      <div class="scratch-frame" id="scratch-container">
+        <!-- Revealed Content Underneath -->
+        <div class="scratch-underlay">
+          <div class="absolute inset-3 border border-sage/25 rounded-2xl pointer-events-none"></div>
+
+          <span class="font-sans text-[10px] tracking-[0.26em] uppercase text-sageDeep font-medium mb-1.5">
+            We Are Getting Married
+          </span>
+
+          <p class="font-serif text-3xl sm:text-4xl font-medium text-ink tracking-tight">
+            December 15, 2026
+          </p>
+
+       
+        </div>
+
+        <!-- Matte Brushed Sage & Pearl Foil Canvas -->
+        <canvas id="scratch-canvas" aria-label="Scratch gently to reveal the wedding date"></canvas>
+
+        <!-- Soft Pulsing Hint Pill -->
+        <div id="scratch-hint" class="scratch-hint-badge bg-linenLight/90 backdrop-blur-sm border border-sage/25 text-sageDeep px-3.5 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+          <svg class="w-3.5 h-3.5 text-clay" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+          </svg>
+          <span class="font-sans text-[11px] font-medium tracking-wide">Rub gently to reveal</span>
+        </div>
+      </div>
+
+      <!-- Accessible Fallback Reveal Button -->
+      <div class="mt-4 flex flex-col items-center gap-1">
+        <p id="scratch-status" class="font-serif italic text-sm text-sageDeep hidden">
+          We cannot wait to celebrate with you.
+        </p>
+        <button
+          id="reveal-fallback-btn"
+          type="button"
+          class="min-h-[44px] px-4 font-sans text-xs tracking-wide text-inkMuted hover:text-sageDeep underline underline-offset-4 transition-colors cursor-pointer"
+        >
+          or tap to reveal
+        </button>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         MINIMALIST LIVE COUNTDOWN TIMER (IST)
+         ======================================================================= -->
+    <section id="countdown-section" class="text-center reveal-on-scroll">
+      <p class="font-sans text-[11px] tracking-[0.26em] uppercase text-sageDeep/85 mb-2">
+        Counting the Days
+      </p>
+      <h3 class="font-serif text-3xl sm:text-4xl font-normal text-ink mb-7">
+        Counting Down To Forever
+      </h3>
+
+      <div id="countdown-grid" class="grid grid-cols-4 gap-2.5 sm:gap-4">
+        <div class="botanical-card rounded-2xl py-4 px-2">
+          <div id="cd-days" class="font-serif text-3xl sm:text-4xl font-medium text-sageDeep leading-none">00</div>
+          <div class="font-sans text-[10px] tracking-[0.18em] uppercase text-inkMuted mt-2">Days</div>
+        </div>
+        <div class="botanical-card rounded-2xl py-4 px-2">
+          <div id="cd-hours" class="font-serif text-3xl sm:text-4xl font-medium text-sageDeep leading-none">00</div>
+          <div class="font-sans text-[10px] tracking-[0.18em] uppercase text-inkMuted mt-2">Hours</div>
+        </div>
+        <div class="botanical-card rounded-2xl py-4 px-2">
+          <div id="cd-minutes" class="font-serif text-3xl sm:text-4xl font-medium text-sageDeep leading-none">00</div>
+          <div class="font-sans text-[10px] tracking-[0.18em] uppercase text-inkMuted mt-2">Mins</div>
+        </div>
+        <div class="botanical-card rounded-2xl py-4 px-2">
+          <div id="cd-seconds" class="font-serif text-3xl sm:text-4xl font-medium text-sageDeep leading-none">00</div>
+          <div class="font-sans text-[10px] tracking-[0.18em] uppercase text-inkMuted mt-2">Secs</div>
+        </div>
+      </div>
+
+      <p id="countdown-complete-msg" class="hidden font-serif italic text-3xl text-sageDeep mt-4">
+        The day is finally here!
+      </p>
+    </section>
+
+    <!-- =======================================================================
+         EVENTS SCHEDULE
+         ======================================================================= -->
+    <section id="events-section" class="reveal-on-scroll">
+   
+
+      <div class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+        <!-- Event 1: Wedding Dinner -->
+        <article class="botanical-card rounded-3xl p-7 text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-sageMist flex items-center justify-center text-sageDeep mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.87c1.355 0 2.697.055 4.024.165C17.155 8.51 18 9.473 18 10.608v2.513m-3-4.87v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.38a48.474 48.474 0 00-6-.37c-2.032 0-4.034.125-6 .37m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.17c0 .62-.504 1.124-1.125 1.124H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12M12.265 3.11a.375.375 0 11-.53 0L12 2.845l.265.265zm-3 0a.375.375 0 11-.53 0L9 2.845l.265.265zm6 0a.375.375 0 11-.53 0L15 2.845l.265.265z" />
+            </svg>
+          </div>
+          <h4 class="font-serif text-2xl font-medium text-ink mb-2">
+            Wedding Dinner
+          </h4>
+          <div class="w-8 h-[1px] bg-clay/50 mb-3.5"></div>
+          <p class="font-sans text-sm font-medium text-ink">
+            December 15, 2026
+          </p>
+          <p class="font-sans text-sm text-sageDeep font-medium mt-1">
+            7:00 PM Onwards
+          </p>
+          <p class="font-serif italic text-base text-inkMuted mt-3">
+            Sri Annapurna Function Hall
+          </p>
+        </article>
+
+        <!-- Event 2: Sumuhurtham -->
+        <article class="botanical-card rounded-3xl p-7 text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-claySoft flex items-center justify-center text-clay mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+              <circle cx="9.5" cy="12.5" r="4.5" />
+              <circle cx="14.5" cy="12.5" r="4.5" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5l1 2-1 1.5-1-1.5 1-2z" />
+            </svg>
+          </div>
+          <h4 class="font-serif text-2xl font-medium text-ink mb-2">
+            Sumuhurtham
+          </h4>
+          <div class="w-8 h-[1px] bg-clay/50 mb-3.5"></div>
+          <p class="font-sans text-sm font-medium text-ink">
+            Night of Dec 15, 2026
+          </p>
+          <p class="font-sans text-sm text-sageDeep font-medium mt-1">
+            3:54 AM <span class="font-normal text-inkMuted">(Early morning of Dec 16)</span>
+          </p>
+          <p class="font-serif italic text-base text-inkMuted mt-3">
+            Sri Annapurna Function Hall
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         VENUE & DIRECTIONS
+         ======================================================================= -->
+    <section id="venue-section" class="reveal-on-scroll">
+      <div class="botanical-card rounded-[28px] p-8 sm:p-10 text-center">
+        <div class="w-12 h-12 mx-auto rounded-full bg-sageMist flex items-center justify-center text-sageDeep mb-4">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+        </div>
+
+        <p class="font-sans text-[11px] tracking-[0.26em] uppercase text-sageDeep/85 mb-2">
+          Venue
+        </p>
+
+        <h3 class="font-serif text-3xl sm:text-4xl font-normal text-ink mb-2.5">
+          Sri Annapurna Function Hall
+        </h3>
+
+        <p class="font-sans text-sm text-inkMuted leading-relaxed mb-7">
+          Mehar Complex, Samalkot,<br />
+          Kakinada District
+        </p>
+
+        <!-- Action Buttons (Mobile-first >= 48px tap targets) -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Sri+Annapurna+Function+Hall,+Mehar+Complex,+Samalkot,+Kakinada+District"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-sage w-full sm:w-auto min-h-[48px] px-6 py-3 rounded-full font-sans text-xs font-medium tracking-[0.16em] uppercase inline-flex items-center justify-center gap-2"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+            </svg>
+            <span>Open in Maps</span>
+          </a>
+
+          <button
+            id="save-calendar-btn"
+            type="button"
+            class="btn-outline-sage w-full sm:w-auto min-h-[48px] px-6 py-3 rounded-full font-sans text-xs font-medium tracking-[0.16em] uppercase inline-flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+            </svg>
+            <span>Save to Calendar</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         HEARTFELT FOOTER & REPLAY CURTAINS LINK
+         ======================================================================= -->
+    <footer class="text-center pt-4 pb-10 reveal-on-scroll">
+      <!-- Minimalist Olive Branch Divider -->
+      <div class="flex items-center justify-center gap-3 mb-6 text-sage/60">
+        <span class="h-[1px] w-12 bg-sage/30"></span>
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M12 20V4" stroke-linecap="round"/>
+          <path d="M12 14C8.5 13 7 10 9.5 8.5C11 9.5 12 11.5 12 14Z" fill="currentColor" opacity="0.25"/>
+          <path d="M12 11C15.5 10 17 7 14.5 5.5C13 6.5 12 8.5 12 11Z" fill="currentColor" opacity="0.25"/>
+        </svg>
+        <span class="h-[1px] w-12 bg-sage/30"></span>
+      </div>
+
+      <p class="font-serif italic text-xl sm:text-2xl text-ink/90 leading-relaxed max-w-sm mx-auto mb-5">
+        “Your presence and blessings mean the world to us as we begin this new chapter together.”
+      </p>
+
+      <div class="font-serif italic text-3xl text-sageDeep mb-1">
+        S &amp; K
+      </div>
+      <p class="font-sans text-xs tracking-[0.2em] uppercase text-inkMuted mb-7">
+        December 15 – 16, 2026 &bull; Samalkot
+      </p>
+
+      <!-- Subtle Replay Curtains Link -->
+      <button
+        id="replay-curtains-btn"
+        type="button"
+        class="min-h-[44px] px-4 font-sans text-xs tracking-[0.14em] uppercase text-inkMuted hover:text-sageDeep underline underline-offset-4 transition-colors cursor-pointer"
+      >
+        Close Invitation
+      </button>
+    </footer>
+  </main>
+
+  <!-- =========================================================================
+       INTERACTIVE JAVASCRIPT ENGINE
+       ========================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* -----------------------------------------------------------------------
+         TOAST NOTIFICATION HELPER
+         ----------------------------------------------------------------------- */
+      const toastEl = document.getElementById('toast-pill');
+      let toastTimer = null;
+
+      function showToast(msg) {
+        if (!toastEl) return;
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2800);
+      }
+
+      /* -----------------------------------------------------------------------
+         1. AESTHETIC AMBIENT MUSIC ENGINE (Felt-Piano & Soft Kalimba)
+            Uses warm Major 7th / Major 9th chords: Fmaj7 -> Cmaj7 -> Dm9 -> Bbmaj7
+         ----------------------------------------------------------------------- */
+      const musicToggleBtn = document.getElementById('music-toggle');
+      const customMusicEl = document.getElementById('custom-music');
+      let audioCtx = null;
+      let masterGain = null;
+      let wetGain = null;
+      let delayNode = null;
+      let isMusicPlaying = false;
+      let chordTimer = null;
+      let kalimbaTimer = null;
+      let chordIdx = 0;
+      let arpStep = 0;
+
+      // Dreamy progression in Hz: Fmaj7, Cmaj7, Dm9, Bbmaj7
+      const chordProgression = [
+        [174.61, 220.00, 261.63, 329.63, 392.00], // Fmaj9
+        [130.81, 196.00, 246.94, 293.66, 329.63], // Cmaj9
+        [146.83, 220.00, 261.63, 329.63, 349.23], // Dm9
+        [116.54, 174.61, 220.00, 261.63, 293.66]  // Bbmaj9
+      ];
+
+      // Soft upper-register kalimba/bell notes matching the key of F major
+      const kalimbaNotes = [523.25, 587.33, 659.25, 698.46, 783.99, 880.00];
+
+      function initAudioGraph() {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) return false;
+
+        if (!audioCtx) {
+          audioCtx = new AudioContextClass();
+
+          masterGain = audioCtx.createGain();
+          masterGain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+          masterGain.connect(audioCtx.destination);
+
+          // Subtle warm echo/reverb feedback loop
+          delayNode = audioCtx.createDelay(1.0);
+          delayNode.delayTime.setValueAtTime(0.42, audioCtx.currentTime);
+
+          const feedback = audioCtx.createGain();
+          feedback.gain.setValueAtTime(0.32, audioCtx.currentTime);
+
+          const delayFilter = audioCtx.createBiquadFilter();
+          delayFilter.type = 'lowpass';
+          delayFilter.frequency.setValueAtTime(1400, audioCtx.currentTime);
+
+          wetGain = audioCtx.createGain();
+          wetGain.gain.setValueAtTime(0.38, audioCtx.currentTime);
+
+          delayNode.connect(delayFilter);
+          delayFilter.connect(feedback);
+          feedback.connect(delayNode);
+          delayFilter.connect(wetGain);
+          wetGain.connect(masterGain);
+        }
+        return true;
+      }
+
+      // Play a warm felt-piano note with gentle low-pass warmth
+      function playFeltNote(freq, startTime, duration, volume) {
+        if (!audioCtx || !masterGain) return;
+        const osc = audioCtx.createOscillator();
+        const filter = audioCtx.createBiquadFilter();
+        const env = audioCtx.createGain();
+
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, startTime);
+
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(950, startTime);
+        filter.frequency.exponentialRampToValueAtTime(380, startTime + duration);
+
+        env.gain.setValueAtTime(0.0001, startTime);
+        env.gain.linearRampToValueAtTime(volume, startTime + 0.14);
+        env.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+
+        osc.connect(filter);
+        filter.connect(env);
+        env.connect(masterGain);
+        env.connect(delayNode);
+
+        osc.start(startTime);
+        osc.stop(startTime + duration + 0.08);
+      }
+
+      // Play a delicate plucked kalimba accent
+      function playKalimbaNote(freq, startTime) {
+        if (!audioCtx || !masterGain) return;
+        const osc = audioCtx.createOscillator();
+        const env = audioCtx.createGain();
+
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, startTime);
+
+        env.gain.setValueAtTime(0.0001, startTime);
+        env.gain.linearRampToValueAtTime(0.042, startTime + 0.02);
+        env.gain.exponentialRampToValueAtTime(0.0001, startTime + 1.9);
+
+        osc.connect(env);
+        env.connect(masterGain);
+        env.connect(delayNode);
+
+        osc.start(startTime);
+        osc.stop(startTime + 2.0);
+      }
+
+      function scheduleNextChord() {
+        if (!isMusicPlaying || !audioCtx) return;
+        const now = audioCtx.currentTime;
+        const chord = chordProgression[chordIdx % chordProgression.length];
+        chordIdx++;
+
+        // Softly arpeggiate the felt-piano chord
+        chord.forEach((freq, idx) => {
+          playFeltNote(freq, now + idx * 0.14, 4.4, idx === 0 ? 0.085 : 0.052);
+        });
+      }
+
+      function startAestheticMusic() {
+        isMusicPlaying = true;
+        musicToggleBtn.classList.remove('hidden', 'music-paused');
+
+        if (customMusicEl) {
+          customMusicEl.volume = 0.55;
+          customMusicEl.play().catch(() => startSynthLoop());
+        } else {
+          startSynthLoop();
+        }
+      }
+
+      function startSynthLoop() {
+        try {
+          if (!initAudioGraph()) return;
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+
+          const now = audioCtx.currentTime;
+          masterGain.gain.cancelScheduledValues(now);
+          masterGain.gain.linearRampToValueAtTime(0.45, now + 1.6);
+
+          if (!chordTimer) {
+            scheduleNextChord();
+            chordTimer = setInterval(scheduleNextChord, 4600);
+          }
+
+          if (!kalimbaTimer) {
+            const pattern = [0, 2, 4, 3, 5, 2, 1, 4];
+            kalimbaTimer = setInterval(() => {
+              if (!isMusicPlaying || !audioCtx) return;
+              if (Math.random() < 0.72) {
+                const note = kalimbaNotes[pattern[arpStep % pattern.length]];
+                arpStep++;
+                playKalimbaNote(note, audioCtx.currentTime + 0.05);
+              }
+            }, 1500);
+          }
+        } catch (err) {
+          console.warn('Audio init skipped:', err);
+        }
+      }
+
+      function pauseAestheticMusic() {
+        isMusicPlaying = false;
+        musicToggleBtn.classList.add('music-paused');
+
+        if (customMusicEl) {
+          customMusicEl.pause();
+        }
+        if (audioCtx && masterGain) {
+          const now = audioCtx.currentTime;
+          masterGain.gain.cancelScheduledValues(now);
+          masterGain.gain.linearRampToValueAtTime(0.0001, now + 0.5);
+        }
+      }
+
+      musicToggleBtn.addEventListener('click', () => {
+        if (isMusicPlaying) {
+          pauseAestheticMusic();
+          showToast('Sound muted');
+        } else {
+          startAestheticMusic();
+          showToast('Ambient music playing');
+        }
+      });
+
+      /* -----------------------------------------------------------------------
+         2. FLOATING BOTANICAL LEAVES & SOFT LIGHT MOTES CANVAS
+         ----------------------------------------------------------------------- */
+      const ambientCanvas = document.getElementById('ambient-canvas');
+      const ambientCtx = ambientCanvas.getContext('2d');
+      let ambientParticles = [];
+
+      function resizeAmbientCanvas() {
+        ambientCanvas.width = window.innerWidth;
+        ambientCanvas.height = window.innerHeight;
+      }
+
+      function initAmbientParticles() {
+        ambientParticles = [];
+        const count = window.innerWidth < 640 ? 22 : 34;
+        for (let i = 0; i < count; i++) {
+          const isLeaf = Math.random() < 0.35;
+          ambientParticles.push({
+            x: Math.random() * ambientCanvas.width,
+            y: Math.random() * ambientCanvas.height,
+            size: isLeaf ? 3.5 + Math.random() * 4 : 1.5 + Math.random() * 2.5,
+            speedY: isLeaf ? 0.22 + Math.random() * 0.3 : -0.15 - Math.random() * 0.25,
+            speedX: (Math.random() - 0.5) * 0.25,
+            opacity: isLeaf ? 0.18 + Math.random() * 0.22 : 0.25 + Math.random() * 0.35,
+            angle: Math.random() * Math.PI * 2,
+            spin: (Math.random() - 0.5) * 0.012,
+            isLeaf
+          });
+        }
+      }
+
+      function animateAmbient() {
+        ambientCtx.clearRect(0, 0, ambientCanvas.width, ambientCanvas.height);
+
+        for (let i = 0; i < ambientParticles.length; i++) {
+          const p = ambientParticles[i];
+          p.x += p.speedX + Math.sin(p.angle) * 0.14;
+          p.y += p.speedY;
+          p.angle += p.spin;
+
+          if (p.y < -20) p.y = ambientCanvas.height + 20;
+          if (p.y > ambientCanvas.height + 20) p.y = -20;
+          if (p.x < -20) p.x = ambientCanvas.width + 20;
+          if (p.x > ambientCanvas.width + 20) p.x = -20;
+
+          ambientCtx.save();
+          ambientCtx.translate(p.x, p.y);
+          ambientCtx.rotate(p.angle);
+          ambientCtx.globalAlpha = p.opacity;
+
+          if (p.isLeaf) {
+            ambientCtx.fillStyle = '#6F826A';
+            ambientCtx.beginPath();
+            ambientCtx.ellipse(0, 0, p.size, p.size * 0.45, 0, 0, Math.PI * 2);
+            ambientCtx.fill();
+          } else {
+            ambientCtx.fillStyle = '#C48B76';
+            ambientCtx.beginPath();
+            ambientCtx.arc(0, 0, p.size, 0, Math.PI * 2);
+            ambientCtx.fill();
+          }
+          ambientCtx.restore();
+        }
+        requestAnimationFrame(animateAmbient);
+      }
+
+      /* -----------------------------------------------------------------------
+         3. DELICATE PETAL SHOWER CANVAS (FOR SCRATCH REVEAL)
+         ----------------------------------------------------------------------- */
+      const burstCanvas = document.getElementById('petal-burst-canvas');
+      const burstCtx = burstCanvas.getContext('2d');
+      let burstParticles = [];
+      let isBurstAnimating = false;
+
+      function resizeBurstCanvas() {
+        burstCanvas.width = window.innerWidth;
+        burstCanvas.height = window.innerHeight;
+      }
+
+      function triggerPetalShower(originX, originY, count = 65) {
+        const palette = ['#6F826A', '#A4B49D', '#C48B76', '#E6ECE2', '#FAF8F3'];
+        for (let i = 0; i < count; i++) {
+          const angle = Math.random() * Math.PI * 2;
+          const speed = 1.6 + Math.random() * 4.8;
+          burstParticles.push({
+            x: originX,
+            y: originY,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed - 2.0,
+            gravity: 0.085,
+            drag: 0.985,
+            size: 3.5 + Math.random() * 4.5,
+            color: palette[Math.floor(Math.random() * palette.length)],
+            alpha: 0.95,
+            rot: Math.random() * Math.PI * 2,
+            rotSpeed: (Math.random() - 0.5) * 0.12
+          });
+        }
+        if (!isBurstAnimating) {
+          isBurstAnimating = true;
+          animatePetalShower();
+        }
+      }
+
+      function animatePetalShower() {
+        burstCtx.clearRect(0, 0, burstCanvas.width, burstCanvas.height);
+
+        for (let i = burstParticles.length - 1; i >= 0; i--) {
+          const p = burstParticles[i];
+          p.vx *= p.drag;
+          p.vy = p.vy * p.drag + p.gravity;
+          p.x += p.vx;
+          p.y += p.vy;
+          p.rot += p.rotSpeed;
+          p.alpha -= 0.01;
+
+          if (p.alpha <= 0) {
+            burstParticles.splice(i, 1);
+            continue;
+          }
+
+          burstCtx.save();
+          burstCtx.translate(p.x, p.y);
+          burstCtx.rotate(p.rot);
+          burstCtx.globalAlpha = p.alpha;
+          burstCtx.fillStyle = p.color;
+          burstCtx.beginPath();
+          burstCtx.ellipse(0, 0, p.size, p.size * 0.52, 0, 0, Math.PI * 2);
+          burstCtx.fill();
+          burstCtx.restore();
+        }
+
+        if (burstParticles.length > 0) {
+          requestAnimationFrame(animatePetalShower);
+        } else {
+          isBurstAnimating = false;
+        }
+      }
+
+      /* -----------------------------------------------------------------------
+         4. FLOWING CURTAINS OPENING & REPLAY
+         ----------------------------------------------------------------------- */
+      const curtainOverlay = document.getElementById('curtain-overlay');
+      const openCurtainsBtn = document.getElementById('open-curtains-btn');
+      const replayCurtainsBtn = document.getElementById('replay-curtains-btn');
+      let curtainsAreOpen = false;
+
+      function openCurtains() {
+        if (curtainsAreOpen) return;
+        curtainsAreOpen = true;
+
+        curtainOverlay.classList.add('opening');
+        startAestheticMusic();
+
+        setTimeout(() => {
+          curtainOverlay.classList.add('opened');
+          document.body.classList.remove('curtains-locked');
+          checkRevealElements();
+        }, 1250);
+      }
+
+      function replayCurtains() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        curtainsAreOpen = false;
+        document.body.classList.add('curtains-locked');
+        curtainOverlay.classList.remove('opened', 'opening');
+      }
+
+      openCurtainsBtn.addEventListener('click', openCurtains);
+      replayCurtainsBtn.addEventListener('click', replayCurtains);
+
+      /* -----------------------------------------------------------------------
+         5. ORGANIC MATTE SAGE & PEARL SCRATCH CARD
+         ----------------------------------------------------------------------- */
+      const scratchCanvas = document.getElementById('scratch-canvas');
+      const scratchContainer = document.getElementById('scratch-container');
+      const scratchHint = document.getElementById('scratch-hint');
+      const scratchStatus = document.getElementById('scratch-status');
+      const revealFallbackBtn = document.getElementById('reveal-fallback-btn');
+      const sCtx = scratchCanvas.getContext('2d', { willReadFrequently: true });
+
+      let isScratching = false;
+      let isCardRevealed = false;
+      let lastPoint = null;
+      let scratchTicks = 0;
+
+      function drawSagePearlFoil() {
+        const rect = scratchContainer.getBoundingClientRect();
+        if (rect.width === 0 || rect.height === 0) return;
+
+        scratchCanvas.width = Math.round(rect.width);
+        scratchCanvas.height = Math.round(rect.height);
+
+        const w = scratchCanvas.width;
+        const h = scratchCanvas.height;
+
+        sCtx.globalCompositeOperation = 'source-over';
+
+        // Soft Matte Brushed Sage & Pearl Gradient
+        const grad = sCtx.createLinearGradient(0, 0, w, h);
+        grad.addColorStop(0, '#8FA189');
+        grad.addColorStop(0.32, '#B6C4B0');
+        grad.addColorStop(0.55, '#E4E9DF');
+        grad.addColorStop(0.8, '#A9B9A2');
+        grad.addColorStop(1, '#7D9078');
+        sCtx.fillStyle = grad;
+        sCtx.fillRect(0, 0, w, h);
+
+        // Delicate Linen / Brushed Matte Texture
+        sCtx.strokeStyle = 'rgba(255, 255, 255, 0.16)';
+        sCtx.lineWidth = 1;
+        for (let y = 0; y < h; y += 3) {
+          sCtx.beginPath();
+          sCtx.moveTo(0, y);
+          sCtx.lineTo(w, y);
+          sCtx.stroke();
+        }
+
+        // Subtle Botanical Circle Outline on Foil
+        sCtx.save();
+        sCtx.strokeStyle = 'rgba(43, 51, 44, 0.14)';
+        sCtx.lineWidth = 1.2;
+        sCtx.strokeRect(12, 12, w - 24, h - 24);
+        sCtx.restore();
+
+        // Editorial Prompt Text on Foil
+        sCtx.textAlign = 'center';
+        sCtx.textBaseline = 'middle';
+
+        sCtx.fillStyle = 'rgba(43, 51, 44, 0.78)';
+        sCtx.font = `italic 500 ${Math.max(20, Math.round(w * 0.068))}px "Cormorant Garamond", serif`;
+        sCtx.fillText('Scratch gently', w / 2, h / 2 - 18);
+
+        sCtx.fillStyle = 'rgba(43, 51, 44, 0.65)';
+        sCtx.font = `400 ${Math.max(11, Math.round(w * 0.032))}px "Plus Jakarta Sans", sans-serif`;
+        sCtx.fillText('TO REVEAL THE DATE', w / 2, h / 2 + 8);
+      }
+
+      function getPointerPos(e) {
+        const rect = scratchCanvas.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        return {
+          x: (clientX - rect.left) * (scratchCanvas.width / rect.width),
+          y: (clientY - rect.top) * (scratchCanvas.height / rect.height)
+        };
+      }
+
+      function scratchAt(pos) {
+        if (isCardRevealed) return;
+        scratchHint.classList.add('hidden-hint');
+
+        sCtx.globalCompositeOperation = 'destination-out';
+        sCtx.lineCap = 'round';
+        sCtx.lineJoin = 'round';
+        const brushRadius = Math.max(24, scratchCanvas.width * 0.075);
+        sCtx.lineWidth = brushRadius * 2;
+
+        if (lastPoint) {
+          sCtx.beginPath();
+          sCtx.moveTo(lastPoint.x, lastPoint.y);
+          sCtx.lineTo(pos.x, pos.y);
+          sCtx.stroke();
+        } else {
+          sCtx.beginPath();
+          sCtx.arc(pos.x, pos.y, brushRadius, 0, Math.PI * 2);
+          sCtx.fill();
+        }
+
+        lastPoint = pos;
+        scratchTicks++;
+        if (scratchTicks % 5 === 0) {
+          checkScratchProgress();
+        }
+      }
+
+      function checkScratchProgress() {
+        if (isCardRevealed) return;
+        try {
+          const imgData = sCtx.getImageData(0, 0, scratchCanvas.width, scratchCanvas.height);
+          const data = imgData.data;
+          let cleared = 0;
+          const totalSamples = data.length / (4 * 16);
+
+          for (let i = 3; i < data.length; i += 4 * 16) {
+            if (data[i] < 128) cleared++;
+          }
+
+          if ((cleared / totalSamples) * 100 >= 45) {
+            completeScratchReveal();
+          }
+        } catch (err) {
+          console.warn('Scratch progress check skipped:', err);
+        }
+      }
+
+      function completeScratchReveal() {
+        if (isCardRevealed) return;
+        isCardRevealed = true;
+        scratchCanvas.classList.add('revealed');
+        scratchHint.classList.add('hidden-hint');
+        revealFallbackBtn.classList.add('hidden');
+        scratchStatus.classList.remove('hidden');
+
+        const rect = scratchContainer.getBoundingClientRect();
+        triggerPetalShower(rect.left + rect.width / 2, rect.top + rect.height / 2, 70);
+      }
+
+      // Desktop Mouse Listeners
+      scratchCanvas.addEventListener('mousedown', (e) => {
+        isScratching = true;
+        lastPoint = null;
+        scratchAt(getPointerPos(e));
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isScratching) return;
+        scratchAt(getPointerPos(e));
+      });
+
+      window.addEventListener('mouseup', () => {
+        isScratching = false;
+        lastPoint = null;
+      });
+
+      // Mobile Touch Listeners (preventDefault prevents page scroll)
+      scratchCanvas.addEventListener('touchstart', (e) => {
+        if (isCardRevealed) return;
+        e.preventDefault();
+        isScratching = true;
+        lastPoint = null;
+        scratchAt(getPointerPos(e));
+      }, { passive: false });
+
+      scratchCanvas.addEventListener('touchmove', (e) => {
+        if (!isScratching || isCardRevealed) return;
+        e.preventDefault();
+        scratchAt(getPointerPos(e));
+      }, { passive: false });
+
+      scratchCanvas.addEventListener('touchend', () => {
+        isScratching = false;
+        lastPoint = null;
+      });
+
+      revealFallbackBtn.addEventListener('click', completeScratchReveal);
+
+      /* -----------------------------------------------------------------------
+         6. LIVE COUNTDOWN TIMER (IST: Dec 16, 2026 03:54:00 +05:30)
+         ----------------------------------------------------------------------- */
+      const targetTimestamp = new Date('2026-12-16T03:54:00+05:30').getTime();
+      const cdDays = document.getElementById('cd-days');
+      const cdHours = document.getElementById('cd-hours');
+      const cdMinutes = document.getElementById('cd-minutes');
+      const cdSeconds = document.getElementById('cd-seconds');
+      const cdGrid = document.getElementById('countdown-grid');
+      const cdComplete = document.getElementById('countdown-complete-msg');
+
+      function updateCountdown() {
+        const diff = targetTimestamp - Date.now();
+        if (diff <= 0) {
+          cdGrid.classList.add('hidden');
+          cdComplete.classList.remove('hidden');
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        cdDays.textContent = String(days).padStart(2, '0');
+        cdHours.textContent = String(hours).padStart(2, '0');
+        cdMinutes.textContent = String(minutes).padStart(2, '0');
+        cdSeconds.textContent = String(seconds).padStart(2, '0');
+      }
+
+      /* -----------------------------------------------------------------------
+         7. SAVE TO CALENDAR (.ICS DOWNLOAD)
+         ----------------------------------------------------------------------- */
+      const saveCalendarBtn = document.getElementById('save-calendar-btn');
+
+      saveCalendarBtn.addEventListener('click', () => {
+        try {
+          // Dinner starts Dec 15, 2026 7:00 PM IST (13:30 UTC)
+          // Muhurtham ends ~5:30 AM IST Dec 16, 2026 (00:00 UTC)
+          const icsContent = [
+            'BEGIN:VCALENDAR',
+            'VERSION:2.0',
+            'PRODID:-//Sai Kishore & Santhoshi Gayithri Wedding//EN',
+            'CALSCALE:GREGORIAN',
+            'METHOD:PUBLISH',
+            'BEGIN:VEVENT',
+            'UID:sai-kishore-santhoshi-gayithri-2026@weddinginvite',
+            'DTSTAMP:20261122T150000Z',
+            'DTSTART:20261215T133000Z',
+            'DTEND:20261216T000000Z',
+            'SUMMARY:Wedding: Sai Kishore & Santhoshi Gayithri',
+            'DESCRIPTION:We warmly invite you to celebrate the wedding of Sai Kishore & Santhoshi Gayithri.\\n\\nWedding Dinner: Dec 15, 2026, 7:00 PM onwards\\nSumuhurtham: 3:54 AM (Early morning of Dec 16, 2026)\\n\\nVenue: Sri Annapurna Function Hall, Mehar Complex, Samalkot, Kakinada District.',
+            'LOCATION:Sri Annapurna Function Hall, Mehar Complex, Samalkot, Kakinada District',
+            'END:VEVENT',
+            'END:VCALENDAR'
+          ].join('\r\n');
+
+          const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'Sai-Kishore-Santhoshi-Gayithri-Wedding.ics';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+
+          showToast('Saved to your calendar');
+        } catch (err) {
+          console.error('Calendar export failed:', err);
+          showToast('Could not export calendar file');
+        }
+      });
+
+      /* -----------------------------------------------------------------------
+         8. SMOOTH SCROLL-REVEAL OBSERVER
+         ----------------------------------------------------------------------- */
+      const revealEls = document.querySelectorAll('.reveal-on-scroll');
+
+      function checkRevealElements() {
+        const triggerY = window.innerHeight * 0.92;
+        revealEls.forEach((el) => {
+          if (el.getBoundingClientRect().top < triggerY) {
+            el.classList.add('visible');
+          }
+        });
+      }
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12 }
+        );
+        revealEls.forEach((el) => observer.observe(el));
+      } else {
+        window.addEventListener('scroll', checkRevealElements);
+      }
+
+      /* -----------------------------------------------------------------------
+         INITIALIZATION ON WINDOW LOAD & RESIZE
+         ----------------------------------------------------------------------- */
+      window.onload = function () {
+        resizeAmbientCanvas();
+        resizeBurstCanvas();
+        initAmbientParticles();
+        animateAmbient();
+
+        if (!isCardRevealed) {
+          drawSagePearlFoil();
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      };
+
+      let resizeTimeout = null;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          resizeAmbientCanvas();
+          resizeBurstCanvas();
+          if (!isCardRevealed) {
+            drawSagePearlFoil();
+          }
+        }, 180);
+      });
+    })();
+  </script>
+</body>
+</html>
