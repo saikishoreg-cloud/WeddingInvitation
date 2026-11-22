@@ -341,7 +341,9 @@
     }
 
     .scratch-hint-badge.hidden-hint {
+      animation: none;
       opacity: 0;
+      visibility: hidden;
     }
 
     @keyframes softPulse {
@@ -1395,7 +1397,7 @@
         if (isCardRevealed) return;
         isCardRevealed = true;
         scratchCanvas.classList.add('revealed');
-        scratchHint.classList.add('hidden-hint');
+        scratchHint.classList.add('hidden-hint', 'hidden');
         revealFallbackBtn.classList.add('hidden');
         scratchStatus.classList.remove('hidden');
 
